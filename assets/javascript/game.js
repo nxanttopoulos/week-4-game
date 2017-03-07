@@ -11,17 +11,22 @@ $(document).ready(function() {
 	    $("#randomNumber").html("<h2 id='text2'>"+randomNum+"</h2>");
 	    playerNum = 0;
 	    randomGame();
+	    return playerNum;
 	}
 
 	function randomGame(result) {
 	    oneToThree = Math.floor(Math.random() * 3)+1;
 	    if (oneToThree === 1) {
+	    	playerNum =0;
 	    	gameOne();
 	    } else if (oneToThree === 2) {
+	    	playerNum =0;
 	    	gameTwo();
 	    } else {
+	    	playerNum =0;
 	    	gameThree();
 	    }
+		return playerNum;
 	}
 
 	randomStartingNum();
@@ -40,6 +45,7 @@ $(document).ready(function() {
 		    $("#playerNumber").html("<h2 id='text2'>" + playerNum +"</h2>");
 		    randomStartingNum();
 		}
+		return playerNum;
 	}
 
 	function GameOne () {
