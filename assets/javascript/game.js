@@ -11,7 +11,6 @@ $(document).ready(function() {
 	    $("#randomNumber").html("<h2 id='text2'>"+randomNum+"</h2>");
 	    playerNum = 0;
 	    randomGame();
-	    return playerNum;
 	}
 
 	function randomGame(result) {
@@ -26,7 +25,6 @@ $(document).ready(function() {
 	    	playerNum =0;
 	    	gameThree();
 	    }
-		return playerNum;
 	}
 
 	randomStartingNum();
@@ -45,7 +43,6 @@ $(document).ready(function() {
 		    $("#playerNumber").html("<h2 id='text2'>" + playerNum +"</h2>");
 		    randomStartingNum();
 		}
-		return playerNum;
 	}
 
 	function GameOne () {
