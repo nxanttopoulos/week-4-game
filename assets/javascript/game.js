@@ -7,7 +7,7 @@ $(document).ready(function() {
 	var oneToThree =0;
 
 	function randomStartingNum(result) {
-	    randomNum = Math.floor(Math.random() * 102)+19;
+	    randomNum = Math.floor(Math.random() * 42)+19;
 	    $("#randomNumber").html("<h2 id='text2'>"+randomNum+"</h2>");
 	    playerNum = 0;
 	    randomGame();
@@ -30,7 +30,7 @@ $(document).ready(function() {
 	randomStartingNum();
 
 	function didYouWin() {
-	if (playerNum === randomNum) {
+		if (playerNum === randomNum) {
 		    wins++;
 		    $("#winsLosses").html("<h2 id='text'>You Win!!<br>Wins:"+ wins +"<br>Losses:"+ losses +"</h2>");       
 			playerNum = 0;
@@ -48,10 +48,10 @@ $(document).ready(function() {
 	function GameOne () {
 		$("#crystalOne").on("click", function() {
 		    if (playerNum === 0) {
-		    playerNum = 12;
+		    playerNum = 8;
 		    $("#playerNumber").html("<h2 id='text2'>" + playerNum +"</h2>");
 			} else 
-			playerNum = playerNum+12;
+			playerNum = playerNum+8;
 		    $("#playerNumber").html("<h2 id='text2'>" + playerNum +"</h2>"); 
 		    didYouWin();
 		});
@@ -68,10 +68,10 @@ $(document).ready(function() {
 
 		$("#crystalThree").on("click", function() {
 		    if (playerNum === 0) {
-		    playerNum = 10;
+		    playerNum = 4;
 		    $("#playerNumber").html("<h2 id='text2'>" + playerNum +"</h2>");
 			} else 
-			playerNum = playerNum+10;
+			playerNum = playerNum+4;
 		    $("#playerNumber").html("<h2 id='text2'>" + playerNum +"</h2>");
 			didYouWin();
 		});
@@ -90,10 +90,10 @@ $(document).ready(function() {
 	function gameTwo () {
 		$("#crystalTwo").on("click", function() {
 		    if (playerNum === 0) {
-		    playerNum = 12;
+		    playerNum = 8;
 		    $("#playerNumber").html("<h2 id='text2'>" + playerNum +"</h2>");
 			} else 
-			playerNum = playerNum+12;
+			playerNum = playerNum+8;
 		    $("#playerNumber").html("<h2 id='text2'>" + playerNum +"</h2>"); 
 		    didYouWin();
 		});
@@ -110,10 +110,10 @@ $(document).ready(function() {
 
 		$("#crystalFour").on("click", function() {
 		    if (playerNum === 0) {
-		    playerNum = 10;
+		    playerNum = 4;
 		    $("#playerNumber").html("<h2 id='text2'>" + playerNum +"</h2>");
 			} else 
-			playerNum = playerNum+10;
+			playerNum = playerNum+4;
 		    $("#playerNumber").html("<h2 id='text2'>" + playerNum +"</h2>");
 			didYouWin();
 		});
@@ -132,10 +132,10 @@ $(document).ready(function() {
 	function gameThree () {
 		$("#crystalThree").on("click", function() {
 		    if (playerNum === 0) {
-		    playerNum = 12;
+		    playerNum = 8;
 		    $("#playerNumber").html("<h2 id='text2'>" + playerNum +"</h2>");
 			} else 
-			playerNum = playerNum+12;
+			playerNum = playerNum+8;
 		    $("#playerNumber").html("<h2 id='text2'>" + playerNum +"</h2>"); 
 		    didYouWin();
 		});
@@ -152,10 +152,10 @@ $(document).ready(function() {
 
 		$("#crystalOne").on("click", function() {
 		    if (playerNum === 0) {
-		    playerNum = 10;
+		    playerNum = 4;
 		    $("#playerNumber").html("<h2 id='text2'>" + playerNum +"</h2>");
 			} else 
-			playerNum = playerNum+10;
+			playerNum = playerNum+4;
 		    $("#playerNumber").html("<h2 id='text2'>" + playerNum +"</h2>");
 			didYouWin();
 		});
