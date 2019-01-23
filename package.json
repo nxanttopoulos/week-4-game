@@ -1,0 +1,24 @@
+{
+  "name": "crystal-collector-game",
+  "version": "1.0.0",
+  "description": "This game demonstrates the use of jQuery to manipulate the DOM with accompanying logic to make a dynamic game.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nxanttopoulos/week-4-game.git"
+  },
+  "author": "Nicholas Xanttopoulos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nxanttopoulos/week-4-game/issues"
+  },
+  "homepage": "https://github.com/nxanttopoulos/week-4-game#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}
