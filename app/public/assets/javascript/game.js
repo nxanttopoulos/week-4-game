@@ -3,26 +3,26 @@ $(document).ready(function() {
 	var randomNum = 0;
 	var wins = 0;
 	var losses = 0;
-	var playerNum =0;
-	var oneToThree =0;
+	var playerNum = 0;
+	var oneToThree = 0;
 
-	function randomStartingNum(result) {
+	function randomStartingNum() {
 	    randomNum = Math.floor(Math.random() * 42)+19;
 	    $("#randomNumber").html("<h2 id='text2'>"+randomNum+"</h2>");
 	    playerNum = 0;
 	    randomGame();
 	}
 
-	function randomGame(result) {
+	function randomGame() {
 	    oneToThree = Math.floor(Math.random() * 3)+1;
 	    if (oneToThree === 1) {
-	    	playerNum =0;
+	    	playerNum = 0;
 	    	gameOne();
 	    } else if (oneToThree === 2) {
-	    	playerNum =0;
+	    	playerNum = 0;
 	    	gameTwo();
 	    } else {
-	    	playerNum =0;
+	    	playerNum = 0;
 	    	gameThree();
 	    }
 	}
@@ -45,7 +45,7 @@ $(document).ready(function() {
 		}
 	}
 
-	function GameOne () {
+	function gameOne () {
 		$("#crystalOne").on("click", function() {
 		    if (playerNum === 0) {
 		    playerNum = 8;
